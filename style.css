@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.7%;
+  height: 100dvh;
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(to bottom, #ffffff, #fff0f5, #ffd1dc, #ffb6c1);
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+}
+canvas {
+  position: fixed !important;
+  z-index: 5 !important; /* Lower than other elements */
+  pointer-events: none; /* Ensures clicks pass through */
+}
+.main-wrapper {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+button {
+  width: 12rem;
+  height: 6rem;
+  font-size: 2rem;
+  border-radius: 9px;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+.img {
+  height: 40%;
+  margin-bottom: 6rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  color: #333;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  width: 40%;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-size: 4.5rem;
+  color: #333;
+  font-weight: 500;
+  font-family: "Sacramento", serif;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.green-color {
+  background-color: #40c057;
+}
+.red-color {
+  background-color: #f03e3e;
+}
+
+@media (max-width: 30em) {
+  p {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    width: 90%;
+  }
+  .btns {
+    margin-bottom: 1.7rem;
+  }
+}
