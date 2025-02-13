@@ -36,6 +36,8 @@ btnsContainer.addEventListener("click", (e) => {
     element.textContent =
       "I love you so freaking much and spending every day with you is the best thing that happens in my life <3";
     wrapper.insertAdjacentElement("beforeend", element);
+    //hide the btns
+    btnsContainer.style.display = "none";
 
     setTimeout(() => {
       confetti({
